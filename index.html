@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo DeMolay Luiz Zaguini Nº 151</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter e Cinzel para um toque clássico -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 {
+            font-family: 'Cinzel', serif;
+        }
+        /* Cores de destaque mantidas */
+        .text-dm-green { color: #008000; }
+        .bg-dm-green { background-color: #006400; }
+        .hover\:bg-dm-green-dark:hover { background-color: #004d00; }
+        
+        .border-dm-yellow { border-color: #FFD700; }
+        .text-dm-yellow { color: #FFD700; }
+
+        .border-dm-red { border-color: #B22222; }
+        .text-dm-red { color: #B22222; }
+
+        /* Animação para o menu lateral */
+        @keyframes slide-in {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+        @keyframes slide-out {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Menu Lateral (Mobile) - Mantido escuro para contraste -->
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 bg-black bg-opacity-95 backdrop-blur-sm z-50 transform -translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="p-5">
+            <button id="close-menu" class="text-white float-right mb-4">
+                <i class="fas fa-times fa-2x"></i>
+            </button>
+            <div class="clear-both"></div>
+            <!-- Logo no Menu -->
+            <img src="https://i.imgur.com/wP6GZ7m.png" alt="Logo do Capítulo Luiz Zaguini" class="mx-auto mb-6 w-32">
+            
+            <nav class="flex flex-col space-y-4 text-lg text-gray-200">
+                <a href="#historia-capitulo" class="menu-link hover:text-dm-green transition-colors duration-200">História do Capítulo</a>
+                <a href="#historia-demolay" class="menu-link hover:text-dm-green transition-colors duration-200">História da Ordem DeMolay</a>
+                <a href="#eventos" class="menu-link hover:text-dm-green transition-colors duration-200">Eventos</a>
+                <a href="#filantropia" class="menu-link hover:text-dm-green transition-colors duration-200">Filantropia</a>
+                <a href="#jornal" class="menu-link hover:text-dm-green transition-colors duration-200">Jornal DeMolay</a>
+                <a href="#seja-socio" class="menu-link hover:text-dm-green transition-colors duration-200">Seja Sócio</a>
+                <a href="#calendario" class="menu-link hover:text-dm-green transition-colors duration-200">Calendário</a>
+                <a href="#mcs" class="menu-link hover:text-dm-green transition-colors duration-200">Histórico de MCs</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-40 shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Logo Principal -->
+            <div class="flex items-center space-x-4">
+                 <img src="https://i.imgur.com/j8nZJ1c.png" alt="Logo DeMolay" class="h-12 w-12 rounded-full object-cover">
+                 <img src="https://i.imgur.com/wP6GZ7m.png" alt="Logo do Capítulo Luiz Zaguini" class="h-12">
+                 <span class="text-xl font-bold text-gray-800 hidden sm:block">Luiz Zaguini Nº 151</span>
+            </div>
+            
+            <!-- Botão do Menu Hamburguer -->
+            <button id="open-menu" class="text-gray-800 text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Seção Hero -->
+        <section class="relative h-96 bg-cover bg-center" style="background-image: url('https://placehold.co/1200x800/555555/ffffff?text=Reuni%C3%A3o+DeMolay');">
+            <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+                <div class="text-center text-white p-4">
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Conheça o nosso Capítulo</h1>
+                    <p class="text-lg md:text-xl max-w-2xl mx-auto">Uma fraternidade de jovens dedicados a se tornarem líderes melhores para o futuro.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: História da Ordem DeMolay -->
+        <section id="historia-demolay" class="py-16 sm:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="flex justify-center">
+                        <img src="https://placehold.co/500x350/dddddd/333333?text=S%C3%ADmbolos+DeMolay" alt="Símbolos da Ordem DeMolay" class="rounded-lg shadow-lg border-2 border-dm-yellow">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4 text-dm-green">Como a Ordem DeMolay Funciona?</h2>
+                        <p class="mb-4 text-gray-600">
+                            A Ordem DeMolay funciona como uma escola de liderança. Em reuniões regulares, os jovens aprendem a falar em público, a organizar projetos, a gerenciar finanças e a trabalhar em equipe, tudo isso dentro de um ambiente de fraternidade e respeito. As atividades são lideradas pelos próprios membros, com a orientação de adultos (Maçons), o que garante um aprendizado prático e real.
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                           Hoje em dia, ser um DeMolay é um diferencial. A Ordem prepara o jovem para os desafios da vida adulta, ensinando valores éticos e morais que são aplicados na família, na escola e na carreira. Além de desenvolver habilidades de liderança, o DeMolay cria uma rede de irmãos e amigos para a vida toda, em todo o mundo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Divisor estilizado -->
+        <div class="container mx-auto px-6">
+            <hr class="border-t-2 border-dm-green opacity-30"/>
+        </div>
+
+        <!-- Seção: História do Capítulo -->
+        <section id="historia-capitulo" class="py-16 sm:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Nossa História: Capítulo Luiz Zaguini Nº 151</h2>
+                <div class="max-w-3xl mx-auto text-left text-gray-600 space-y-4 mb-12">
+                    <p>
+                        No dia 29 de maio de 1991, sete maçons do município de Camboriú reuniram-se a convite da Loja Eduardo Teixeira Nº 41 com o objetivo de semear no coração de jovens a fraternidade, união e companheirismo da Ordem DeMolay naquela cidade.
+                    </p>
+                    <p>
+                        O nome escolhido para o Capítulo foi Luiz Zaguini, em homenagem ao Tio que foi um grande incentivador da Ordem DeMolay antes de seguir seu caminho rumo ao Oriente Eterno. Na ocasião, não foi fácil encontrar jovens interessados em abraçar a causa. Esse objetivo só foi alcançado no dia 4 de dezembro de 1993, no Templo da Loja Estrela do Mar, na cidade de Balneário Camboriú. O Capítulo Vale do Itajaí Nº 79, de Blumenau, sob a presidência do Mestre Conselheiro Ulisses Alexander, conduziu a iniciação de 18 jovens da região e, assim, deu início aos trabalhos do novo Capítulo.
+                    </p>
+                    <p>
+                        Desde então, o Capítulo Luiz Zaguini Nº 151 tem sido reconhecido estadual e nacionalmente pelo incessante trabalho que realiza pela Ordem DeMolay e pela sociedade camboriuense e catarinense. No ano de 2005, o Capítulo realizou um dos grandes sonhos: inaugurou a sua Sala Capitular. Em terreno cedido pelas Lojas Patrocinadoras, foi construído um espaço baseado nos moldes originais do ritual escrito pelo Tio Frank Sherman Land. O projeto da Sala Capitular, que foi a primeira do Brasil a ser construída com recursos próprios, foi elaborado pelo Irmão Andrei Martins.
+                    </p>
+                    <p>
+                        Nos trabalhos do Capítulo, um destaque é a realização de grandes eventos da Ordem DeMolay. 1996 foi o ano do primeiro grande desafio: o Sétimo Congresso Catarinense e o Primeiro Encontro Cone Sul da Ordem DeMolay. O Capítulo também foi idealizador e responsável pela organização do Primeiro Congresso Nacional no Brasil, sendo Balneário Camboriú a cidade-sede. Já em 2003, realizou o Décimo Quarto Congresso Catarinense, que, como todos os outros, foi um sucesso. Tal ato se repetiu em 2008, quando o Capítulo sediou o Terceiro Congresso Estadual. Mais recentemente, no ano passado, o Capítulo sediou o XXXVIII Congresso Catarinense, considerado o maior da história da Ordem DeMolay Catarinense e um dos maiores do Brasil, alcançando 800 participantes.
+                    </p>
+                     <p>
+                        Ainda, o Capítulo se destaca pelo grande número de líderes estaduais que saíram de suas fileiras, sendo o caso de diversos Mestres Conselheiros Estaduais, Oficiais Executivos e Mestres Conselheiros Regionais, além de lideranças na esfera civil.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+                    <img src="https://placehold.co/400x300/dddddd/333333?text=Foto+Cerim%C3%B4nia" alt="Foto do Capítulo 1" class="rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/400x300/dddddd/333333?text=Foto+Filantropia" alt="Foto do Capítulo 2" class="rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/400x300/dddddd/333333?text=Foto+Grupo" alt="Foto do Capítulo 3" class="rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção de Eventos -->
+        <section id="eventos" class="py-16 sm:py-24 text-center bg-white">
+             <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-12 text-dm-green">Nossos Eventos</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Evento 1 -->
+                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200 shadow-lg flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-dm-yellow mb-2" style="text-shadow: 1px 1px 2px #000000a0;">Cerimônia do Abraço</h3>
+                            <p class="mb-4 text-gray-600">Uma cerimônia emocionante em homenagem aos pais. Aberta ao público!</p>
+                            <p class="font-bold mb-4 text-gray-700">Dia 02 de Agosto</p>
+                        </div>
+                        <a href="#filantropia" class="mt-4 inline-block bg-dm-green text-white font-bold py-3 px-8 rounded-lg hover:bg-dm-green-dark transition-colors duration-300 text-lg">Mais Informações</a>
+                    </div>
+                    <!-- Evento 2 -->
+                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200 shadow-lg flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-dm-yellow mb-2" style="text-shadow: 1px 1px 2px #000000a0;">Strogonoff DeMolay</h3>
+                            <p class="mb-4 text-gray-600">Nosso tradicional evento gastronômico para arrecadar fundos para filantropia.</p>
+                            <p class="font-bold mb-4 text-gray-700">Dia 18 de Outubro</p>
+                        </div>
+                        <a href="#filantropia" class="mt-4 inline-block bg-dm-green text-white font-bold py-3 px-8 rounded-lg hover:bg-dm-green-dark transition-colors duration-300 text-lg">Mais Informações</a>
+                    </div>
+                    <!-- Evento 3 -->
+                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200 shadow-lg flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-dm-yellow mb-2" style="text-shadow: 1px 1px 2px #000000a0;">Cerimônia da Luz</h3>
+                            <p class="mb-4 text-gray-600">Uma cerimônia que representa a luz do conhecimento e da verdade.</p>
+                            <p class="font-bold mb-4 text-gray-700">Dia 23 de Agosto</p>
+                        </div>
+                        <a href="#filantropia" class="mt-4 inline-block bg-dm-green text-white font-bold py-3 px-8 rounded-lg hover:bg-dm-green-dark transition-colors duration-300 text-lg">Mais Informações</a>
+                    </div>
+                </div>
+                 <p class="mt-12 text-base text-gray-600">Para mais informações, entre em contato com o Mestre Conselheiro:<br><strong class="text-lg text-gray-800">Rafael Vanini Mattos - (47) 99178-0801</strong></p>
+            </div>
+        </section>
+
+        <!-- Seção Filantropia e Indicação -->
+        <section id="filantropia" class="py-16 sm:py-24 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-8 text-gray-800">Filantropia e Novos Membros</h2>
+                <p class="max-w-3xl mx-auto text-gray-600 mb-12">
+                    A filantropia é um dos pilares do nosso Capítulo. Realizamos diversas ações para ajudar a comunidade, como arrecadação de alimentos, visitas a asilos e campanhas de conscientização. Acreditamos que servir ao próximo é a melhor forma de construir um mundo melhor.
+                </p>
+                <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md border border-dm-red">
+                    <h3 class="text-2xl font-bold text-dm-green mb-4">Indique um Futuro Líder!</h3>
+                    <p class="text-gray-700 mb-4">
+                        Ficou interessado ou conhece um jovem de 12 a 21 anos com potencial para ser um grande líder? A Ordem DeMolay é o lugar certo para ele!
+                    </p>
+                    <p class="text-gray-700">
+                        Entre em contato com nosso Mestre Conselheiro para saber mais:
+                    </p>
+                    <p class="mt-4 text-lg font-bold text-gray-900">
+                        Rafael Vanini Mattos<br>
+                        (47) 99178-0801
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Jornal DeMolay -->
+        <section id="jornal" class="py-16 sm:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-8 text-gray-800">Jornal DeMolay</h2>
+                <p class="max-w-3xl mx-auto text-gray-600 mb-12">
+                    Fique por dentro das últimas notícias, artigos e novidades do nosso Capítulo. Acesse a última edição do nosso jornal!
+                </p>
+                <div class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-2xl font-bold text-dm-green mb-4">Última Edição Disponível</h3>
+                    <p class="text-gray-700 mb-6">
+                        Clique no botão abaixo para visualizar o nosso jornal em formato PDF e ficar por dentro de todas as nossas atividades e projetos.
+                    </p>
+                    <a href="#" class="inline-block bg-dm-red text-white font-bold py-3 px-8 rounded-lg hover:bg-red-800 transition-colors duration-300 text-lg">
+                        <i class="fas fa-file-pdf mr-2"></i>Ver Jornal em PDF
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Seja Sócio -->
+        <section id="seja-socio" class="py-16 sm:py-24 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-8 text-gray-800">Seja Sócio do Nosso Capítulo e Apoie o Desenvolvimento Local!</h2>
+                <div class="max-w-4xl mx-auto text-left">
+                    <p class="text-gray-600 mb-6">
+                        Você acredita no poder da comunidade, da colaboração e do crescimento coletivo? Então, venha fazer parte do nosso capítulo! Ao se tornar um sócio, você estará apoiando diretamente projetos locais, capacitações, eventos e ações sociais promovidas por nosso grupo — e, de quebra, ainda aproveita benefícios exclusivos com marcas e empresas parceiras.
+                    </p>
+                    <p class="text-gray-600 mb-12 font-semibold">
+                        Ser sócio é mais do que aproveitar descontos — é investir em um movimento que transforma.
+                    </p>
+
+                    <h3 class="text-2xl font-bold mb-4 text-dm-green">Benefícios para Sócios:</h3>
+                    <ul class="list-disc list-inside text-gray-600 mb-8 space-y-2">
+                        <li>Descontos em comércios locais parceiros.</li>
+                        <li>Acesso prioritário a eventos e experiências.</li>
+                        <li>Participação ativa nas decisões do capítulo.</li>
+                        <li>Contribuição direta com iniciativas de impacto positivo.</li>
+                    </ul>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 overflow-x-auto">
+                        <table class="min-w-full text-left">
+                            <thead class="bg-gray-800 text-white">
+                                <tr>
+                                    <th class="p-4">Estabelecimento</th>
+                                    <th class="p-4">Desconto Exclusivo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b bg-gray-50"><td class="p-4">Bread King</td><td class="p-4 font-bold text-dm-green">10%</td></tr>
+                                <tr class="border-b"><td class="p-4">Itapanni Panificadora</td><td class="p-4 font-bold text-dm-green">15%</td></tr>
+                                <tr class="border-b bg-gray-50"><td class="p-4">Ganesh Restaurante</td><td class="p-4 font-bold text-dm-green">20%</td></tr>
+                                <tr class="border-b"><td class="p-4">Pizzaria (parceira 1)</td><td class="p-4 font-bold text-dm-green">15%</td></tr>
+                                <tr class="border-b bg-gray-50"><td class="p-4">Pizzaria (parceira 2)</td><td class="p-4 font-bold text-dm-green">10%</td></tr>
+                                <tr class="border-b"><td class="p-4">Restaurante (parceiro 1)</td><td class="p-4 font-bold text-dm-green">10%</td></tr>
+                                <tr class="border-b bg-gray-50"><td class="p-4">Restaurante (parceiro 2)</td><td class="p-4 font-bold text-dm-green">15%</td></tr>
+                                <tr class="border-b"><td class="p-4">Restaurante (parceiro 3)</td><td class="p-4 font-bold text-dm-green">20%</td></tr>
+                                <tr class="border-b bg-gray-50"><td class="p-4">Sorveteria Stringari</td><td class="p-4 font-bold text-dm-green">15%</td></tr>
+                                <tr class="border-b"><td class="p-4">Sorveteria (outra)</td><td class="p-4 font-bold text-dm-green">10%</td></tr>
+                                <tr class="border-b bg-gray-50"><td class="p-4">Coronado Barbearia</td><td class="p-4 font-bold text-dm-green">20%</td></tr>
+                                <tr class="border-b"><td class="p-4">Denis Assis Massoterapeuta</td><td class="p-4 font-bold text-dm-green">30%</td></tr>
+                                <tr class="border-b bg-gray-50"><td class="p-4">Wave Academia</td><td class="p-4 font-bold text-dm-green">25%</td></tr>
+                                <tr class="border-b"><td class="p-4">Brava Squash Fit</td><td class="p-4 font-bold text-dm-green">40%</td></tr>
+                                <tr class="border-b bg-gray-50"><td class="p-4">Brava Artes Marciais</td><td class="p-4 font-bold text-dm-green">35%</td></tr>
+                                <tr class="border-b"><td class="p-4">Baltop Auto Center</td><td class="p-4 font-bold text-dm-green">15%</td></tr>
+                                <tr class="border-b bg-gray-50"><td class="p-4">Cinema Shopping Atlântico</td><td class="p-4 font-bold text-dm-green">10%</td></tr>
+                                <tr class="border-b"><td class="p-4">Local Internet (Tio Joanilo)</td><td class="p-4 font-bold text-dm-green">10%</td></tr>
+                                <tr class="border-b bg-gray-50"><td class="p-4">Biro Erre (Tio John)</td><td class="p-4 font-bold text-dm-green">15%</td></tr>
+                                <tr class="border-b"><td class="p-4">CEO (Tio Hugo)</td><td class="p-4 font-bold text-dm-green">10%</td></tr>
+                                <tr class="border-b bg-gray-50"><td class="p-4">SW Medicina do Trabalho</td><td class="p-4 font-bold text-dm-green">10%</td></tr>
+                                <tr><td class="p-4">JCanedo</td><td class="p-4 font-bold text-dm-green">15%</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="mt-12 text-center bg-white p-8 rounded-lg shadow-md border border-dm-green">
+                         <p class="text-gray-700 text-lg mb-4">
+                            Para saber mais como se tornar um sócio e adquirir sua carteirinha, entre neste link abaixo e responda o formulário.
+                        </p>
+                        <a href="#" class="inline-block bg-dm-green text-white font-bold py-3 px-8 rounded-lg hover:bg-dm-green-dark transition-colors duration-300 text-lg">
+                            Acessar Formulário de Sócio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Calendário -->
+        <section id="calendario" class="py-16 sm:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-8 text-gray-800">Nosso Calendário</h2>
+                <p class="max-w-2xl mx-auto text-gray-600 mb-8">Fique por dentro de todas as nossas atividades. Aqui você pode visualizar nosso calendário de eventos e reuniões.</p>
+                <div class="max-w-4xl mx-auto bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200 flex justify-center items-center" style="min-height: 400px;">
+                     <img src="https://i.imgur.com/wP6GZ7m.png" alt="Calendário de Atividades do Capítulo" class="max-w-full h-auto rounded-md">
+                </div>
+                <p class="mt-8 text-lg text-dm-green font-semibold">Colaboração e presença de todos!</p>
+            </div>
+        </section>
+
+        <!-- Seção Histórico de MCs -->
+        <section id="mcs" class="py-16 sm:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Histórico de Mestres Conselheiros</h2>
+                <div id="mcs-list" class="max-w-5xl mx-auto bg-white p-8 rounded-lg border border-gray-200 shadow-inner columns-2 sm:columns-3 md:columns-4 gap-x-8">
+                    <!-- As gestões serão preenchidas pelo script abaixo -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Lojas Patrocinadoras -->
+        <section id="patrocinadores" class="py-16 sm:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-12 text-gray-800">Lojas Patrocinadoras</h2>
+                <div class="flex flex-wrap justify-center items-center gap-12 md:gap-16">
+                    <!-- Loja 1 -->
+                    <div class="flex flex-col items-center">
+                        <img src="https://placehold.co/150x150/ffffff/cccccc?text=Logo" alt="Logo Loja 1" class="rounded-full border-4 border-dm-yellow w-36 h-36 object-cover mb-4 shadow-md">
+                        <h4 class="text-lg font-semibold text-gray-700">Eduardo Teixeira Nº 41</h4>
+                    </div>
+                    <!-- Loja 2 -->
+                    <div class="flex flex-col items-center">
+                        <img src="https://placehold.co/150x150/ffffff/cccccc?text=Logo" alt="Logo Loja 2" class="rounded-full border-4 border-dm-yellow w-36 h-36 object-cover mb-4 shadow-md">
+                        <h4 class="text-lg font-semibold text-gray-700">Eduardo Teixeira Nº 80</h4>
+                    </div>
+                    <!-- Loja 3 -->
+                    <div class="flex flex-col items-center">
+                        <img src="https://placehold.co/150x150/ffffff/cccccc?text=Logo" alt="Logo Loja 3" class="rounded-full border-4 border-dm-yellow w-36 h-36 object-cover mb-4 shadow-md">
+                        <h4 class="text-lg font-semibold text-gray-700">Obreiros do Bonsucesso Nº 105</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center text-gray-300">
+            <div class="flex flex-col sm:flex-row justify-center items-center sm:space-x-6 space-y-2 sm:space-y-0 mb-4 text-sm sm:text-base">
+                <a href="https://www.instagram.com/luizzaguini151" target="_blank" class="hover:text-dm-yellow transition-colors duration-200 flex items-center">
+                    <i class="fab fa-instagram fa-lg mr-2"></i>
+                    @luizzaguini151
+                </a>
+                <a href="mailto:luiz.zaguini@gmail.com" class="hover:text-dm-yellow transition-colors duration-200 flex items-center">
+                    <i class="fas fa-envelope fa-lg mr-2"></i>
+                    luiz.zaguini@gmail.com
+                </a>
+                <a href="mailto:capitulo151@demolaybrasil.org.br" class="hover:text-dm-yellow transition-colors duration-200 flex items-center">
+                    <i class="fas fa-envelope fa-lg mr-2"></i>
+                    capitulo151@demolaybrasil.org.br
+                </a>
+            </div>
+            <p>&copy; 2024 Capítulo DeMolay Luiz Zaguini Nº 151. Todos os direitos reservados.</p>
+            <p class="text-sm mt-2">Desenvolvido para fortalecer a liderança juvenil.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para controlar o menu lateral
+        const openMenuBtn = document.getElementById('open-menu');
+        const closeMenuBtn = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuLinks = mobileMenu.querySelectorAll('.menu-link');
+
+        function openMenu() {
+            mobileMenu.classList.remove('-translate-x-full');
+        }
+
+        function closeMenu() {
+            mobileMenu.classList.add('-translate-x-full');
+        }
+
+        openMenuBtn.addEventListener('click', openMenu);
+        closeMenuBtn.addEventListener('click', closeMenu);
+        
+        // Fecha o menu ao clicar em um link
+        menuLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        // Script para preencher o histórico de MCs
+        const mcsContainer = document.getElementById('mcs-list');
+        if (mcsContainer) {
+            const startYear = 1993;
+            const currentYear = new Date().getFullYear();
+            let content = '';
+            for (let year = currentYear; year >= startYear; year--) {
+                // Adiciona a gestão do segundo semestre (B)
+                content += `<p class="mb-2 text-gray-600 break-inside-avoid"><strong>${year} B:</strong></p>`;
+                // Adiciona a gestão do primeiro semestre (A)
+                content += `<p class="mb-4 text-gray-600 break-inside-avoid"><strong>${year} A:</strong></p>`;
+            }
+            mcsContainer.innerHTML = content;
+        }
+    </script>
+</body>
+</html>
